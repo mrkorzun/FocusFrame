@@ -15,7 +15,8 @@
   padding: 15px 0 15px 20px;
 }
 
-.nav-logo-icon {
+.nav-logo-icon,
+.burger-btn-svg {
   fill: var(--white);
 }
 
