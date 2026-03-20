@@ -1,0 +1,43 @@
+.about-us-title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 28px;
+
+  /* line-height: 32px; */
+  line-height: 1.14;
+  color: var(--white);
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.25;
+  }
+}
+
+.color-about-us-span {
+  color: var(--brown);
+  text-transform: capitalize;
+}
+
+.about-us-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us-img {
+  border-radius: 1000px;
+  margin-bottom: 40px;
+}
+
+.about-us-text,
+.about-us-text-second {
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+    max-width: 280px;
+  }
+}
+
+.about-us-text {
+    margin-bottom: 20px;
+}
