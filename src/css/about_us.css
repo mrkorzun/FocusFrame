@@ -1,0 +1,50 @@
+.running-wrapper {
+    margin-bottom: 150px;
+
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    white-space: nowrap;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: var(--black);
+}
+
+.running-track {
+  display: flex; /* Выстраивает оба заголовка в ряд */
+  width: max-content; /* Ширина по содержимому */
+  animation: fly-pass 15s linear infinite; /* Запускаем анимацию */
+    gap: 100px;
+}
+
+@keyframes fly-pass {
+    0% {
+        transform: translateX(100vw); /* Начинаем полностью справа за экраном */
+    }
+    100% {
+        transform: translateX(-100%); /* Уходим полностью влево за экран */
+    }
+}
+
+.running-line-title {
+    padding: 24px 0;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 59px;
+    line-height: 1.1;
+  }
+}
+
+.running-color-title {
+  color: var(--brown);
+}
