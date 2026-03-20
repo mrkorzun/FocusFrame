@@ -9,6 +9,24 @@
 
   margin-top: 20px;
   padding: 40px 20px 0;
+
+  @media only screen and (min-width: 768px) {
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 64px 32px 0;
+    
+  }
+
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px 0;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    padding: 80px 100px 0 50px;
+    
+  }
 }
 
 .hero-title {
@@ -19,6 +37,19 @@
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: -0.04em;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 490px;
+    font-weight: 500;
+    font-size: 60px;
+
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    font-size: 64px;
+  }
 }
 
 .color-span {
@@ -30,6 +61,11 @@
 .hero-text {
   max-width: 290px;
   margin-bottom: 40px;
+
+    @media only screen and (min-width: 1280px) {
+    max-width: 392px;
+    margin-bottom: 136px;
+  }
 }
 
 /* === STUDENT === */
@@ -37,6 +73,15 @@
 .hero-content-section {
   display: flex;
   margin-bottom: 31px;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero-student {
+      @media only screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .hero-student-list {
@@ -44,6 +89,7 @@
   position: relative;
 
   margin-bottom: 4px;
+  margin-right: 24px;
 }
 
 .hero-student-list li:nth-child(1) {
@@ -113,18 +159,18 @@
 }
 
 .hero-reviews-star-svg {
-    fill: transparent;
-    stroke:#1d1d1d;
-    stroke-width: 2px;
+  fill: transparent;
+  stroke: #1d1d1d;
+  stroke-width: 2px;
 }
 
 .hero-reviews-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-reviews-text {
-    margin: 4px 0;
+  margin: 4px 0;
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -140,4 +186,16 @@
 .hero-img {
   margin-left: auto;
   margin-right: auto;
+
+  @media only screen and (min-width: 768px) {
+    width: 393px;
+    height: 434px;
+    margin-top: auto;
+  }
+
+   @media only screen and (min-width: 1280px) {
+    width: 397px;
+    height: 520px;
+    margin: 0;
+  }
 }
